@@ -1,15 +1,13 @@
-# Collatz Conjecture (3x+1 Problem) Implementation
+echo '# Collatz Conjecture PHP Implementation
 
-PHP implementation of the famous unsolved mathematical problem.
+This PHP script calculates the <a href="https://en.wikipedia.org/wiki/Collatz_conjecture">Collatz Conjecture</a> sequence for any positive integer.
 
 ## Features
-- Calculates the sequence for any positive integer
-- Tracks:
-  - Full sequence
-  - Maximum value reached
-  - Total iterations
+- Calculates the complete sequence
+- Tracks maximum value reached
+- Counts iterations needed to reach 1
 
 ## Usage
 ```php
 $result = collatz(5);
-echo json_encode($result, JSON_PRETTY_PRINT);
+// Returns array with sequence, max_value, and iterations
