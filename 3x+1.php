@@ -25,7 +25,14 @@ function collatz($num) {
         "max_value" => $maxValue,
         "iterations" => $iterations
     ];
-}' > 3x+1.php
+}
+
+// Example usage
+$result = collatz(5);
+echo "Sequence: " . implode(" → ", $result["sequence"]) . "\n";
+echo "Max value: " . $result["max_value"] . "\n";
+echo "Iterations: " . $result["iterations"] . "\n";
+' > 3x+1.php
 
 git add 3x+1.php
-git commit -m "Initial version of Collatz conjecture implementation"
+git commit -m "Added example usage to the Collatz function"
