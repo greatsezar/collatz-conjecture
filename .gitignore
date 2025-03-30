@@ -1,23 +1,24 @@
-# === PHP General ===
-/vendor/
-composer.lock
-.phpunit.result.cache
-
-# === Environment ===
-.env
-.env.local
-.env.test
-
-# === Logs & Cache ===
-*.log
-*.cache
-/tmp/
-
-# === System Files ===
-.DS_Store
-Thumbs.db
+echo '
+# IDE files
 .idea/
 .vscode/
 
-# === Local Configs ===
-config.local.php
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite
+
+# Dependency directories
+vendor/
+node_modules/
+' > .gitignore
+
+git add .gitignore
+git commit -m "Added .gitignore file"
